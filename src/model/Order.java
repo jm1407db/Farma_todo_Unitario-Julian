@@ -123,12 +123,11 @@ public class Order {
     StringBuilder sb = new StringBuilder();
     int counter = 1;
     sb.append("\n----------------------------------------------------------------------------------------\n");
-     for(Product p : products){
+    for(Product p : products){
         sb.append("Product N.").append(counter++).append(": ")
-          .append(p.getPro_name())
-          .append(" - $")
-          .append(String.format("%,.2f", p.getPro_price()))
-          .append("\n");
+        .append(" - $")
+        .append(String.format("%,.2f", p.getPro_price()))
+        .append("\n");
     }
 
 

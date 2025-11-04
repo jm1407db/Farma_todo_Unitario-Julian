@@ -57,8 +57,8 @@ public class FarmaTodoGUI extends JFrame{
                         allCorrect=false;
                     }
                 } catch (NumberFormatException i) {
-                   JOptionPane.showMessageDialog(null, "Se ingreso un valor no numerico");
-                   allCorrect=false; 
+                    JOptionPane.showMessageDialog(null, "Se ingreso un valor no numerico");
+                    allCorrect=false; 
                 }  
                 } while (allCorrect==false);
                 

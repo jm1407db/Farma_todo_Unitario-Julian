@@ -44,6 +44,18 @@ public class Person {
     public char getDoc_type(){
         return doc_type;
     }
+    public void setName(String name) {
+        if (name==null) throw new IllegalArgumentException("El valor del nombre  no puede ser nulo");
+        this.name = name;
+    }
+    public void setDoc_type(char doc_type) {
+        if( doc_type == '\u0000')throw new IllegalArgumentException("el tipo de documento no puede ser vacio");
+        this.doc_type = doc_type;
+    }
+    public void setDoc_num(String doc_num) {
+        if(doc_num==null)throw new IllegalArgumentException("el número de documento no puede ser vacio");
+        this.doc_num = doc_num;
+    }
     /**Obtener el numero de documento correspondiente a la persona
      * 
      * @return Obtener la cadena de texto asociada al documento de la persona
